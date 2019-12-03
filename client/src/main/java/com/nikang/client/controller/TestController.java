@@ -1,6 +1,6 @@
 package com.nikang.client.controller;
 
-import com.nikang.client.service.feign.TestService;
+import com.nikang.client.service.TestSevice;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ public class TestController {
     private RestTemplate restTemplate;
 
     @Autowired
-    private TestService testService;
+    private TestSevice testService;
     @RequestMapping(value = "/getStrByClient")
     public String getString(){
         log.info("into Controller For Client ...");

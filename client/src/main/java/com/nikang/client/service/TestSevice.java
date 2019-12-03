@@ -1,15 +1,15 @@
 package com.nikang.client.service;
 
-import com.nikang.client.service.feign.TestService;
+import com.nikang.client.service.feign.TestFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TestSevice {
     @Autowired
-    private TestService testService;
+    private TestFeignService testFeignService;
 
     public String queryString(){
-        return testService.queryString();
+        return testFeignService.queryString();
     }
 }
