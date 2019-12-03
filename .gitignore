@@ -22,6 +22,8 @@ build/
 *.ipr
 *.iws
 *.idea
+logTrace.iml
+*Maven*.xml
 
 # Spring Bootstrap artifacts
 
