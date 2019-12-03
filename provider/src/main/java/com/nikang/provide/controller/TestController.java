@@ -14,7 +14,7 @@ import javax.ws.rs.HeaderParam;
 public class TestController {
     @RequestMapping(value = "/queryStrByProvider")
     public String getString(@RequestHeader("traceId") String traceId){
-        log.info("into Controller For Provider ...");
+        log.info("into Controller For Provider ....");
         log.info("MDC tracId For Provider = {}",traceId);
         MDC.put("traceId",traceId);
         return "hello world";
