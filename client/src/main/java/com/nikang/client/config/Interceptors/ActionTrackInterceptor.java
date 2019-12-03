@@ -1,7 +1,6 @@
 package com.nikang.client.config.Interceptors;
 
 import org.slf4j.MDC;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
-import java.util.UUID;
 
 @Component
 public class ActionTrackInterceptor implements ClientHttpRequestInterceptor {
