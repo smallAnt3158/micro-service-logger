@@ -1,9 +1,29 @@
-.idea
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+
+# Build Files #
+
+bin
+target
+build/
+.gradle
+
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA Files #
+
 *.iml
-client/*.iml
-micro-service-eureka/*.iml
-provider/*.iml
-client/target
-micro-service-eureka/target
-provider/*.iml
-Maven*.xml
+*.ipr
+*.iws
+*.idea
+
+# Spring Bootstrap artifacts
+
+dependency-reduced-pom.xml
+README.html
