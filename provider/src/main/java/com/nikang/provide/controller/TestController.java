@@ -19,4 +19,10 @@ public class TestController {
         MDC.put("traceId",traceId);
         return "hello world";
     }
+
+    @RequestMapping(value = "/queryStrByProvider2")
+    public String getString(){
+        log.info("into Controller For Provider ....");
+        return "hello world 。。。。";
+    }
 }

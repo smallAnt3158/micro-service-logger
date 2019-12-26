@@ -31,4 +31,11 @@ public class TestController {
         log.info("MDC tracId For Client = {}", MDC.get("traceId"));
         return testService.queryString();
     }
+
+    @RequestMapping(value = "/queryStrByClient2")
+    public String query2String(){
+        log.info("into Controller For Client ...");
+        log.info("MDC tracId For Client = {}", MDC.get("traceId"));
+        return testService.query2String();
+    }
 }

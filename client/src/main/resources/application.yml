@@ -9,3 +9,18 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8888/eureka/
+#feign配置
+feign:
+  hystrix:
+    enabled: true
+#hystrix的超时时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: true
+#        isolation:
+#          strategy: THREAD
+#          thread:
+#            timeoutInMilliseconds: 400000
